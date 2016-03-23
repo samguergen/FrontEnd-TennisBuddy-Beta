@@ -6,6 +6,7 @@ html {
   font-size: 14px;
   min-height:100%;/* make sure it is at least as tall as the viewport */
   position:relative;
+  font-family: "Palatino Linotype", "Book Antiqua", "serif";
 
 }
 
@@ -21,15 +22,19 @@ nav {
   height: 20%;
   list-style-type: none;
   overflow: hidden;
+  font-size: 14px;
 }
 
 ul {
   list-style-type: none;
+  float: right;
+  width: 60%;
+  padding: 5px;
 }
 
 li {
   float: left;
-  padding: 20px;
+  padding: 15px;
 }
 
 li a {
