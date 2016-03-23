@@ -25,27 +25,38 @@ nav {
   overflow: hidden;
 }
 
-ul {
-  list-style-type: none;
-  float: right;
-  width: 70%;
-  padding: 5px;
+.logo {
+  float: left;
 }
 
-li {
+ul {
+  list-style-type: none;
   float: left;
-  padding: 15px;
+  width: 70%;
+  padding: 10px;
+  margin-top: -187px;
+  margin-left: 30%;
+  font-size: 21px;
 }
 
 li a {
+  float: left;
+  padding: 15px;
   display: block;
-  color: white;
+  color: #81F7F3;
+  font-weight: bold;
+  text-shadow: 0px 0px 2px black;
   text-align: center;
   text-decoration: none;
 }
 
+  li:last-child {
+  margin-left: 50%;
+}
+
 a:hover:not(.active) {
-  background-color: #111;
+  /*background-color: #111;*/
+  text-shadow: 0px 0px 5px #81F7F3;
 }
 
 .active {
@@ -69,7 +80,7 @@ a:hover:not(.active) {
 
 }
 
-.main-body .past-games {
+.main-body .past {
 
 }
 
