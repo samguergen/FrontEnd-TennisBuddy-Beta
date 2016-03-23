@@ -4,6 +4,13 @@
 
 html {
   font-size: 14px;
+  min-height:100%;/* make sure it is at least as tall as the viewport */
+  position:relative;
+
+}
+
+body {
+  height: 100%;
 }
 
 nav {
@@ -12,6 +19,32 @@ nav {
   background-color: yellow;
   margin: 2px;
   height: 20%;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+  padding: 20px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color:#4CAF50;
 }
 
 .main-body {
@@ -19,12 +52,12 @@ nav {
   background-color: #A9F5F2;
   border: 2px solid black;
   margin: 2px;
-
+  height: 530px;
+  display: block;
 }
 
 .main-body .home {
-  float: left;
-  width: 100%;
+
 }
 
 .main-body .profile {
