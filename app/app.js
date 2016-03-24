@@ -1,7 +1,8 @@
-var app = angular.module('myApp', []);
+angular.module('myApp', [])
 
-app.config(function() {
-});
+.config(function() {
+})
 
-app.run(function() {
+.run(function() {
+  console.log('angular app running');
 });
