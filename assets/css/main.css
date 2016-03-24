@@ -71,24 +71,34 @@ a:hover:not(.active) {
 }
 
 .home img {
+  height: 496px;
   width: 100%;
   opacity: 0.6;
+  z-index: -5;
+}
+
+.main-content {
+  z-index: 10;
+  margin-top: -450px;
+  margin-left: 40%;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .main-body .profile {
-
+  background-color: green;
 }
 
 .main-body .past {
-
+  background-color: blue;
 }
 
 .main-body .browse {
-
+  background-color: orange;
 }
 
 .main-body .create {
-
+  background-color: red;
 }
 
 .footer {
