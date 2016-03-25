@@ -120,7 +120,7 @@ a:hover:not(.active) {
   padding: 35px;
 }
 
-.main-body .create {
+.main-body .login {
   background-color: red;
   height: 450px;
   padding: 35px;

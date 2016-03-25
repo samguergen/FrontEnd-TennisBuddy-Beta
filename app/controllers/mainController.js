@@ -17,7 +17,7 @@ angular.module('myApp', [])
     'profile':'deactivated',
     'past':'deactivated',
     'browse':'deactivated',
-    'create':'deactivated'
+    'login':'deactivated'
   };
 
   $scope.tabSelection = $scope.tabs[0];
