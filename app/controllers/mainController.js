@@ -1,8 +1,11 @@
 angular.module('myApp', [])
-.controller('mainController', ['$scope', function($scope){
+.controller('mainController', ['$scope', 'uiGmapGoogleMapApi', function($scope, uiGmapGoogleMapApi){
   console.log('inside the controller');
 
-  // $scope.tabsArray = ['home','profile','past','browse','create'];
+  $scope.uiGmapGoogleMapApi.then(function(maps) {
+    console.log(maps);
+    });
+
   $scope.user = {
     'firstName': "Miss",
     'lastName': "Nobody",
