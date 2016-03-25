@@ -11,7 +11,14 @@ angular.module('myApp', [])
     games: []
   };
 
-  $scope.profile = function(){console.log('ok');};
+  // $scope.profile = function(){console.log('ok');};
+
+  $scope.home = '';
+  $scope.profile = '';
+  $scope.past = '';
+  $scope.browse='';
+  $scope.create=';'
+
 
   $scope.tabSelection = $scope.tabsArray[0];
 
