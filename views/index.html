@@ -19,16 +19,15 @@
 
 <body ng-app="myApp" ng-controller="mainController">
 
-  {{ user }}
   <!-- nav layout -->
   <nav>
     <a class="logo" href="#home"><img src="../assets/img/logo.png"/></a>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a ng-click="profile = !profile">My Profile</a></li>
-      <li><a href="#past">Past Games</a></li>
-      <li><a href="#browse">Browse Area</a></li>
-      <li><a href="#create">Create Game</a></li>
+      <li><a ng-click="past = !past">Past Games</a></li>
+      <li><a ng-click="browse = !browse">Browse Area</a></li>
+      <li><a ng-click="create = !create">Create Game</a></li>
     </ul>
   </nav>
 
@@ -41,13 +40,20 @@
 
     <div ng-show="profile" class="profile">
       Hello profile! :)
+      <p>{{ user }} </p>
     </div>
 
-    <div ng-show="past" class="past"></div>
+    <div ng-show="past" class="past">
+      Hello past games
+    </div>
 
-    <div ng-show="browse" class="browse"></div>
+    <div ng-show="browse" class="browse">
+      Hello  browse :D
+    </div>
 
     <div ng-show="create" class="create"></div>
+      Hello create :D
+    </div>
 
   </div>
 
