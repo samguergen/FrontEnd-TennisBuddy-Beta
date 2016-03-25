@@ -5,7 +5,7 @@
 
 html {
   font-size: 14px;
-  min-height:100%;/* make sure it is at least as tall as the viewport */
+  min-height:100%;
   position:relative;
   font-family: "Palatino Linotype", "Book Antiqua", "serif";
   font-size: 16px;
@@ -115,12 +115,12 @@ a:hover:not(.active) {
 }
 
 .main-body .browse {
-  /*background-color: orange;*/
   height: 450px;
-  padding: 35px;
 }
 
-.angular-google-map-container { height: 400px; }
+.angular-google-map-container {
+  height: 400px;
+}
 
 .main-body .login {
   background-color: red;
