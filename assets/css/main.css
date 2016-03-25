@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    border-radius: 4px;
 }
 
 html {
@@ -32,6 +33,7 @@ a.logo img{
 
 ul {
   list-style-type: none;
+  overflow: hidden;
   float: left;
   width: 70%;
   padding: 5px;
@@ -81,7 +83,7 @@ a:hover:not(.active) {
 
 .main-content {
   z-index: 10;
-  margin-top: -450px;
+  margin-top: -400px;
   margin-left: 40%;
   font-weight: bold;
   font-size: 20px;
