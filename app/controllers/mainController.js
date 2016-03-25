@@ -37,13 +37,15 @@ angular.module('myApp', ['uiGmapgoogle-maps'])
     }
   };
 
-var options = {
+  var options = {
                 enableHighAccuracy: true
             };
 
-navigator.geolocation.getCurrentPosition(function(pos) {
+  navigator.geolocation.getCurrentPosition(function(pos) {
                 $scope.position = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
                 console.log(JSON.stringify($scope.position));
+                console.log('current position is  ');
+                console.log($scope.position);
             },
             function(error) {
                 alert('Unable to get location: ' + error.message);
