@@ -8,4 +8,8 @@ angular.module("myApp", [])
     'password':"123",
     games: []
   };
+
+  $scope.tabSwitch = function(tab) {
+
+  };
 });
