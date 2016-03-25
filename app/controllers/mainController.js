@@ -6,9 +6,10 @@ angular.module('myApp', [])
   $scope.user = {
     'firstName': "Miss",
     'lastName': "Nobody",
+    'description': "Some cool hacker chick",
     'email':"miss@nbd.com",
     'password':"123",
-    games: []
+    'games': []
   };
 
   $scope.tabs = {

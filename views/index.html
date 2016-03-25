@@ -40,8 +40,14 @@
     </div>
 
     <div class="profile" ng-show="tabs.profile == 'active'">
-      Hello profile! :)
-      <p>{{ user }}</p>
+      <h2>My Profile</h2>
+      <p>
+        first name:{{ user.firstName }} <br>
+        last name: {{ user.lastName }} <br>
+        description: {{ user.description }} <br>
+        games played: {{ user.games }} <br>
+        email: {{ user.email }}
+      </p>
     </div>
 
     <div class="past" ng-show="tabs.past == 'active'">
