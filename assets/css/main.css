@@ -115,7 +115,7 @@ a:hover:not(.active) {
 }
 
 .main-body .browse {
-  background-color: orange;
+  /*background-color: orange;*/
   height: 450px;
   padding: 35px;
 }

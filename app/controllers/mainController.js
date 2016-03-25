@@ -1,4 +1,4 @@
-angular.module('myApp', [])
+angular.module('myApp', ['uiGmapgoogle-maps'])
 .controller('mainController', ['$scope', 'uiGmapGoogleMapApi', function($scope, uiGmapGoogleMapApi){
   console.log('inside the controller');
 
