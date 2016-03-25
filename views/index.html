@@ -45,8 +45,9 @@
       <div class="location-question">
         Where are you located? <br>
         <form action="index.html">
-        <input type="text" name="current-location" ng-model="location"><br>
-        <input type="submit" value="Locate Me" ng-click="locate()">
+        <input type="text" class="current-location" name="current-location" ng-model="location"><br>
+        <input class="submit-location" type="submit" value="Submit my Location" ng-click="submitLocation()"><br>
+        <input class="locate" type="submit" value="Geolocate me" ng-click="locate()">
       </form>
         </div>
       </div>
