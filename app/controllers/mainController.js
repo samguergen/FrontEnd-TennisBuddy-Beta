@@ -18,13 +18,13 @@ angular.module('myApp', [])
   $scope.tabSelection = $scope.tabsArray[0];
 
   $scope.tabSwitch = function(tab) {
+    console.log(tab);
     for (var i in $scope.tabsArray) {
-      console.log($scope.tabsArray[i]);
-      // if ($scope.tabsArray[i] == tab) {
-      //   console.log('alright');
-      //   $scope.tabsArray = false;
-      //   $scope.tabsArray[i] = true;
-      // }
+      // console.log($scope.tabsArray[i]);
+      $scope.tabsArray[i] = false;
+      if ($scope.tabsArray[i] == tab) {
+        $scope.tabsArray[i] = true;
+      }
     }
   };
 
