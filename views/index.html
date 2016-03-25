@@ -22,20 +22,20 @@
   <!-- nav layout -->
   <nav>
     <a class="logo" href="#home"><img src="../assets/img/logo.png"/></a>
-    <ul>
-      <li><a ng-click="tabSwitch('home')">Home</a></li>
-      <li><a ng-click="tabSwitch('profile')">My Profile</a></li>
-      <li><a ng-click="tabSwitch('past')">Past Games</a></li>
-      <li><a ng-click="tabSwitch('browse')">Browse Area</a></li>
-      <li><a ng-click="tabSwitch('create')">Create Game</a></li>
+    <ul ng-switch-on="selection">
+      <li><a ng-switch-when="home">Home</a></li>
+      <li><a ng-switch-when="profile">My Profile</a></li>
+      <li><a ng-switch-when="past">Past Games</a></li>
+      <li><a ng-switch-when="browse">Browse Area</a></li>
+      <li><a ng-switch-when="create">Create Game</a></li>
     </ul>
   </nav>
 
   <div class="main-body">
 
-    <div class="home">
+    <div ng-init="home" class="home">
       <img alt="bgimg" src="../assets/img/tennis-ball.jpg">
-      <div class="main-content">Time for a game?</div>
+      <div class="main-content">Time for a game</div>
     </div>
 
     <div ng-show="profile" class="profile">

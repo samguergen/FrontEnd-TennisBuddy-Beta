@@ -2,7 +2,7 @@ angular.module("myApp", [])
 .controller("mainController", function($scope){
   console.log('inside the controller');
 
-  var tabsArray = ['home','profile','past','browse','create'];
+  $scope.tabsArray = ['home','profile','past','browse','create'];
   $scope.user = {
     'firstName': "Miss",
     'lastName': "Nobody",
@@ -11,12 +11,16 @@ angular.module("myApp", [])
     games: []
   };
 
-  $scope.tabSwitch = function(tab) {
-    for (var i in tabsArray) {
-      if (tabsArray[i] == tab) {
-        tabsArray = false;
-        tabsArray[i] = true;
-      }
-    }
-  };
+  // $scope.tabSwitch = function(tab) {
+  //   for (var i in $scope.tabsArray) {
+  //     console.log($scope.tabsArray[i);
+  //     if ($scope.tabsArray[i] == tab) {
+  //       console.log('alright');
+  //       $scope.tabsArray = false;
+  //       $scope.tabsArray[i] = true;
+  //     }
+  //   }
+  // };
+
+
 });
