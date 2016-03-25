@@ -25,8 +25,9 @@ nav {
   overflow: hidden;
 }
 
-.logo {
+a.logo img{
   float: left;
+  width: 300px;
 }
 
 ul {
@@ -34,6 +35,7 @@ ul {
   float: left;
   width: 70%;
   padding: 5px;
+  padding-top: 40px;
   margin-top: -187px;
   margin-left: 40%;
   font-size: 21px;
