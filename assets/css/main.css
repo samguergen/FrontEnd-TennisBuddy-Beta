@@ -68,18 +68,16 @@ a:hover:not(.active) {
 }
 
 .main-body {
-  /*padding: 15px;*/
-  /*background-color: #A9F5F2;*/
   border: 2px solid black;
   margin: 2px;
-  height: 500px;
+  height: 400px;
   display: block;
 }
 
 .home img {
   height: 496px;
   width: 100%;
-  opacity: 0.6;
+  opacity: 0.7;
   z-index: -5;
 }
 
@@ -117,6 +115,7 @@ a:hover:not(.active) {
   margin: 2px;
   padding-right: 30px;
   clear: both;
-  height: 20%;
+  height: 10%;
   color: rgb(92, 180, 122);
+  z-index: 1000;
 }
