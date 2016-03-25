@@ -18,13 +18,14 @@
 
 
 <body ng-app="myApp" ng-controller="mainController">
-   {{ 'World' | greet }}
+
+  {{ user }}
   <!-- nav layout -->
   <nav>
     <a class="logo" href="#home"><img src="../assets/img/logo.png"/></a>
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#profile">My Profile</a></li>
+      <li><a ng-click="profile = true">My Profile</a></li>
       <li><a href="#past">Past Games</a></li>
       <li><a href="#browse">Browse Area</a></li>
       <li><a href="#create">Create Game</a></li>
@@ -38,13 +39,15 @@
       <div class="main-content">Time for a game?</div>
     </div>
 
-    <div class="profile"></div>
+    <div ng-show="profile" class="profile">
+      Hello profile! :)
+    </div>
 
-    <div class="past"></div>
+    <div ng-show="past" class="past"></div>
 
-    <div class="browse"></div>
+    <div ng-show="browse" class="browse"></div>
 
-    <div class="create"></div>
+    <div ng-show="create" class="create"></div>
 
   </div>
 
