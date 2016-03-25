@@ -10,6 +10,6 @@ angular.module("myApp", [])
   };
 
   $scope.tabSwitch = function(tab) {
-
+    ['home']
   };
 });
