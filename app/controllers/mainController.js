@@ -6,7 +6,7 @@ angular.module('myApp')
   //   console.log(maps);
   //   });
 
-  $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+  $scope.map = { center: { latitude: 25, longitude: -73 }, zoom: 8 };
 
   $scope.user = {
     'firstName': "Miss",
@@ -44,7 +44,6 @@ angular.module('myApp')
   navigator.geolocation.getCurrentPosition(function(pos) {
                 $scope.position = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
                 $scope.positionObj = JSON.stringify($scope.position);
-                // console.log(JSON.stringify($scope.position));
                 console.log($scope.positionObj);
             },
             function(error) {
