@@ -1,2 +1,2 @@
 # TennisBuddy
-Find a tennis partner and post your request in real-time :D
+Find a tennis partner by posting your request in real-time :D
