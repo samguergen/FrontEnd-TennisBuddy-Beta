@@ -16,9 +16,8 @@
     <script src='../node_modules/angular/angular.min.js'></script>
     <script src='../node_modules/angular-simple-logger/dist/angular-simple-logger.min.js'></script>
     <script src='../node_modules/angular-google-maps/dist/angular-google-maps.min.js'></script>
-<!-- <script src='/path/to/angular-google-maps[.min].js'></script> -->
-<script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script>
-  <link href="../assets/css/main.css" rel="stylesheet" type="text/css" media="all">
+    <script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <link href="../assets/css/main.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 
@@ -28,7 +27,7 @@
 {{ tabSelection}}
   <!-- nav layout -->
   <nav>
-    <a class="logo" href="#home"><img src="../assets/img/logo.png"/></a>
+    <a class="logo" ng-click="tabSwitch('home')"><img src="../assets/img/logo.png"/></a>
     <ul> <!-- once backend implemented -->
       <!-- <li><a ng-click="tabSwitch('signup')">Signup</a></li> -->
       <li><a ng-click="tabSwitch('login')">Login</a></li>
