@@ -19,39 +19,40 @@
 
 <body ng-app="myApp" ng-controller="mainController">
 
+{{ tabSelection}}
   <!-- nav layout -->
   <nav>
     <a class="logo" href="#home"><img src="../assets/img/logo.png"/></a>
-    <ul ng-switch-on="selection">
-      <li><a ng-switch-when="home">Home</a></li>
-      <li><a ng-switch-when="profile">My Profile</a></li>
-      <li><a ng-switch-when="past">Past Games</a></li>
-      <li><a ng-switch-when="browse">Browse Area</a></li>
-      <li><a ng-switch-when="create">Create Game</a></li>
+    <ul  >
+      <li><a ng-click="home">Home</a></li>
+      <li><a ng-click="profile = true">My Profile</a></li>
+      <li><a ng-click="past">Past Games</a></li>
+      <li><a ng-click="browse">Browse Area</a></li>
+      <li><a ng-click="create">Create Game</a></li>
     </ul>
   </nav>
 
-  <div class="main-body">
+  <div ng-switch="tabSelection" class="main-body">
 
-    <div ng-init="home" class="home">
+    <div ng-switch-when="home" class="home">
       <img alt="bgimg" src="../assets/img/tennis-ball.jpg">
       <div class="main-content">Time for a game</div>
     </div>
 
-    <div ng-show="profile" class="profile">
+    <div ng-switch-when="profile" class="profile">
       Hello profile! :)
       <p>{{ user }} </p>
     </div>
 
-    <div ng-show="past" class="past">
+    <div ng-switch-when="past" class="past">
       Hello past games
     </div>
 
-    <div ng-show="browse" class="browse">
+    <div ng-switch-when="browse" class="browse">
       Hello  browse :D
     </div>
 
-    <div ng-show="create" class="create"></div>
+    <div ng-switch-when="create" class="create"></div>
       Hello create :D
     </div>
 

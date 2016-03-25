@@ -1,5 +1,5 @@
-angular.module("myApp", [])
-.controller("mainController", function($scope){
+angular.module('myApp', [])
+.controller('mainController', ['$scope', function($scope){
   console.log('inside the controller');
 
   $scope.tabsArray = ['home','profile','past','browse','create'];
@@ -10,6 +10,8 @@ angular.module("myApp", [])
     'password':"123",
     games: []
   };
+
+  $scope.tabSelection = $scope.tabsArray[0];
 
   // $scope.tabSwitch = function(tab) {
   //   for (var i in $scope.tabsArray) {
@@ -23,4 +25,4 @@ angular.module("myApp", [])
   // };
 
 
-});
+}]);
