@@ -1,4 +1,4 @@
-angular.module('myApp', ['uiGmapgoogle-maps'])
+angular.module('myApp')
 .controller('mainController', ['$scope', 'uiGmapGoogleMapApi', function($scope, uiGmapGoogleMapApi){
   console.log('inside the controller');
 
@@ -43,9 +43,9 @@ angular.module('myApp', ['uiGmapgoogle-maps'])
 
   navigator.geolocation.getCurrentPosition(function(pos) {
                 $scope.position = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
-                console.log(JSON.stringify($scope.position));
-                console.log('current position is  ');
-                console.log($scope.position);
+                $scope.positionObj = JSON.stringify($scope.position);
+                // console.log(JSON.stringify($scope.position));
+                console.log($scope.positionObj);
             },
             function(error) {
                 alert('Unable to get location: ' + error.message);
