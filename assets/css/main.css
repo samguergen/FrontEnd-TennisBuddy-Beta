@@ -94,6 +94,10 @@ a:hover:not(.active) {
   height: 450px;
 }
 
+.main-body .profile h2 {
+  margin-top: -3px;
+}
+
 .main-body .past {
   background-color: beige;
   height: 450px;
