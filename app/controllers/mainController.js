@@ -11,6 +11,8 @@ angular.module('myApp', [])
     games: []
   };
 
+  $scope.profile = function(){console.log('ok');};
+
   $scope.tabSelection = $scope.tabsArray[0];
 
   // $scope.tabSwitch = function(tab) {

@@ -23,16 +23,16 @@
   <!-- nav layout -->
   <nav>
     <a class="logo" href="#home"><img src="../assets/img/logo.png"/></a>
-    <ul  >
+    <ul ng-model="selection">
       <li><a ng-click="home">Home</a></li>
-      <li><a ng-click="profile = true">My Profile</a></li>
+      <li><a ng-click="profile()">My Profile</a></li>
       <li><a ng-click="past">Past Games</a></li>
       <li><a ng-click="browse">Browse Area</a></li>
       <li><a ng-click="create">Create Game</a></li>
     </ul>
   </nav>
 
-  <div ng-switch="tabSelection" class="main-body">
+  <div ng-switch on="tabSelection" class="main-body">
 
     <div ng-switch-when="home" class="home">
       <img alt="bgimg" src="../assets/img/tennis-ball.jpg">
