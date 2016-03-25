@@ -68,12 +68,12 @@ a:hover:not(.active) {
   /*background-color: #A9F5F2;*/
   border: 2px solid black;
   margin: 2px;
-  height: 500px;
+  height: 450px;
   display: block;
 }
 
 .home img {
-  height: 496px;
+  height: 450px;
   width: 100%;
   opacity: 0.6;
   z-index: -5;
@@ -89,18 +89,22 @@ a:hover:not(.active) {
 
 .main-body .profile {
   background-color: green;
+  height: 450px;
 }
 
 .main-body .past {
-  background-color: blue;
+  background-color: beige;
+  height: 450px;
 }
 
 .main-body .browse {
   background-color: orange;
+  height: 450px;
 }
 
 .main-body .create {
   background-color: red;
+  height: 450px;
 }
 
 .footer {
