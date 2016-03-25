@@ -24,35 +24,35 @@
   <nav>
     <a class="logo" href="#home"><img src="../assets/img/logo.png"/></a>
     <ul>
-      <li><a ng-click="tabSwitch(tabsArray[0])">Home</a></li>
-      <li><a ng-click="tabSwitch(tabsArray[1])">My Profile</a></li>
-      <li><a ng-click="tabSwitch(tabsArray[2])">Past Games</a></li>
-      <li><a ng-click="tabSwitch(tabsArray[3])">Browse Area</a></li>
-      <li><a ng-click="tabSwitch(tabsArray[4])">Create Game</a></li>
+      <li><a ng-click="tabSwitch('home')">Home</a></li>
+      <li><a ng-click="tabSwitch('profile')">My Profile</a></li>
+      <li><a ng-click="tabSwitch('past')">Past Games</a></li>
+      <li><a ng-click="tabSwitch('browse')">Browse Area</a></li>
+      <li><a ng-click="tabSwitch('create')">Create Game</a></li>
     </ul>
   </nav>
 
   <div class="main-body">
 
-    <div ng-show="home" class="home">
+    <div ng-show="tabs.home == 'active'" class="home">
       <img alt="bgimg" src="../assets/img/tennis-ball.jpg">
       <div class="main-content">Time for a game</div>
     </div>
 
-    <div ng-show="profile" ng-hide="!profile" class="profile">
+    <div ng-show="tabs.profile == 'active'" class="profile">
       Hello profile! :)
       <p>{{ user }} </p>
     </div>
 
-    <div ng-show="past" ng-hide="!past" class="past">
+    <div ng-show="tabs.past == 'active'" class="past">
       Hello past games
     </div>
 
-    <div ng-show="browse" ng-hide="!browse" class="browse">
+    <div ng-show="tabs.browse == 'active'" class="browse">
       Hello  browse :D
     </div>
 
-    <div ng-show="create" ng-hide="!create" class="create"></div>
+    <div ng-show="tabs.create == 'active'" class="create"></div>
       Hello create :D
     </div>
 
