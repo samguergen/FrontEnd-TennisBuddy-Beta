@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
+    border-radius: 4px;
 }
 
 html {
   font-size: 14px;
-  min-height:100%;/* make sure it is at least as tall as the viewport */
+  min-height:100%;
   position:relative;
   font-family: "Palatino Linotype", "Book Antiqua", "serif";
   font-size: 16px;
@@ -32,6 +33,7 @@ a.logo img{
 
 ul {
   list-style-type: none;
+  overflow: hidden;
   float: left;
   width: 70%;
   padding: 5px;
@@ -69,6 +71,12 @@ a.create {
   margin-left: 50%;
 }
 
+a:hover {
+  cursor: pointer;
+  font-size: 26px;
+  margin-top: -5px;
+}
+
 a:hover:not(.active) {
   text-shadow: 0px 0px 5px #81F7F3;
 }
@@ -79,13 +87,18 @@ a:hover:not(.active) {
 
 .main-body {
   border: 2px solid black;
+<<<<<<< HEAD
   margin: 2px;
   height: 400px;
+=======
+  margin: 5px;
+  height: 450px;
+>>>>>>> master
   display: block;
 }
 
 .home img {
-  height: 496px;
+  height: 450px;
   width: 100%;
   opacity: 0.7;
   z-index: -5;
@@ -93,26 +106,50 @@ a:hover:not(.active) {
 
 .main-content {
   z-index: 10;
+<<<<<<< HEAD
   margin-top: -343px;
   margin-left: 41%;
+=======
+  margin-top: -400px;
+  margin-left: 40%;
+>>>>>>> master
   font-weight: bold;
   font-size: 20px;
 }
 
 .main-body .profile {
   background-color: green;
+  height: 450px;
+}
+
+.main-body .profile h2 {
+  margin-top: -3px;
+  padding: 35px;
+}
+
+.main-body .profile .profile-description {
+  margin: 20px;
+  line-height: 30px;
 }
 
 .main-body .past {
-  background-color: blue;
+  background-color: beige;
+  height: 450px;
+  padding: 35px;
 }
 
 .main-body .browse {
-  background-color: orange;
+  height: 450px;
 }
 
-.main-body .create {
+.angular-google-map-container {
+  height: 400px;
+}
+
+.main-body .login {
   background-color: red;
+  height: 450px;
+  padding: 35px;
 }
 
 .footer {

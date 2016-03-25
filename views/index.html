@@ -12,14 +12,22 @@
     <script src="../node_modules/angular/angular.js"></script>
     <script src="../app/app.js"></script>
     <script src="../app/controllers/mainController.js"></script>
-  <link href="../assets/css/main.css" rel="stylesheet" type="text/css" media="all">
+    <script src='../node_modules/lodash/lodash.min.js'></script>
+    <script src='../node_modules/angular/angular.min.js'></script>
+    <script src='../node_modules/angular-simple-logger/dist/angular-simple-logger.min.js'></script>
+    <script src='../node_modules/angular-google-maps/dist/angular-google-maps.min.js'></script>
+    <script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <link href="../assets/css/main.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 
 
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="mainController">
+
+{{ tabSelection}}
   <!-- nav layout -->
   <nav>
+<<<<<<< HEAD
     <a class="logo" href="#home"><img src="../assets/img/logo.png"/></a>
     <ul>
       <li><a href="#home">Home</a></li>
@@ -29,23 +37,50 @@
         <li><a class="browse" href="#browse">Browse Area</a></li>
         <li><a class="create" href="#create">Create Game</a></li>
     </div>
+=======
+    <a class="logo" ng-click="tabSwitch('home')"><img src="../assets/img/logo.png"/></a>
+    <ul> <!-- once backend implemented -->
+      <!-- <li><a ng-click="tabSwitch('signup')">Signup</a></li> -->
+      <li><a ng-click="tabSwitch('login')">Login</a></li>
+      <li><a ng-click="tabSwitch('profile')">My Profile</a></li>
+      <li><a ng-click="tabSwitch('past')">Past Games</a></li>
+      <li><a ng-click="tabSwitch('browse')">Browse Area</a></li>
+>>>>>>> master
     </ul>
   </nav>
 
   <div class="main-body">
 
-    <div class="home">
+    <div class="home" ng-show="tabs.home == 'active'">
       <img alt="bgimg" src="../assets/img/tennis-ball.jpg">
       <div class="main-content">Time for a game</div>
     </div>
 
-    <div class="profile"></div>
+    <div class="login" ng-show="tabs.login == 'active'">
+      <h2>Login</h2>
+      <p>
+        login form here
+      </p>
+    </div>
 
-    <div class="past"></div>
+    <div class="profile" ng-show="tabs.profile == 'active'">
+      <h2>My Profile</h2>
+      <p class="profile-description">
+        first name:{{ user.firstName }} <br>
+        last name: {{ user.lastName }} <br>
+        description: {{ user.description }} <br>
+        games played: {{ user.games }} <br>
+        email: {{ user.email }}
+      </p>
+    </div>
 
-    <div class="browse"></div>
+    <div class="past" ng-show="tabs.past == 'active'">
+      Hello past games
+    </div>
 
-    <div class="create"></div>
+    <div class="browse" ng-show="tabs.browse == 'active'">
+      <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+    </div>
 
   </div>
 
