@@ -1,6 +1,8 @@
 angular.module("myApp", [])
 .controller("mainController", function($scope){
   console.log('inside the controller');
+
+  var tabsArray = ['home','profile','past','browse','create'];
   $scope.user = {
     'firstName': "Miss",
     'lastName': "Nobody",
@@ -10,6 +12,11 @@ angular.module("myApp", [])
   };
 
   $scope.tabSwitch = function(tab) {
-    ['home']
+    for (var i in tabsArray) {
+      if (tabsArray[i] == tab) {
+        tabsArray = false;
+        tabsArray[i] = true;
+      }
+    }
   };
 });
