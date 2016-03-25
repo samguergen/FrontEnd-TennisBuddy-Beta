@@ -42,6 +42,10 @@
     <div class="home" ng-show="tabs.home == 'active'">
       <img alt="bgimg" src="../assets/img/tennis-ball.jpg">
       <div class="main-content">Time for a game</div>
+      <div class="location-question">
+        Where are you located? <br>
+        <input id="current-location" ng-model="locate()"></input>
+      </div>
     </div>
 
     <div class="login" ng-show="tabs.login == 'active'">
