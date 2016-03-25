@@ -23,13 +23,12 @@
   <!-- nav layout -->
   <nav>
     <a class="logo" href="#home"><img src="../assets/img/logo.png"/></a>
-    <ul>
-      <li><a ng-click="tabSwitch('signup')">Signup</a></li>
+    <ul> <!-- once backend implemented -->
+      <!-- <li><a ng-click="tabSwitch('signup')">Signup</a></li> -->
       <li><a ng-click="tabSwitch('login')">Login</a></li>
       <li><a ng-click="tabSwitch('profile')">My Profile</a></li>
       <li><a ng-click="tabSwitch('past')">Past Games</a></li>
       <li><a ng-click="tabSwitch('browse')">Browse Area</a></li>
-      <li><a ng-click="tabSwitch('create')">Create Game</a></li>
     </ul>
   </nav>
 
@@ -64,10 +63,6 @@
 
     <div class="browse" ng-show="tabs.browse == 'active'">
       Hello  browse :D
-    </div>
-
-    <div class="create" ng-show="tabs.create == 'active'">
-      Hello create :D
     </div>
 
   </div>
