@@ -12,11 +12,11 @@
     <script src="../node_modules/angular/angular.js"></script>
     <script src="../app/app.js"></script>
     <script src="../app/controllers/mainController.js"></script>
-    <script src='../node_modules/lodash/lodash[.min].js'></script>
-    <script src='../node_modules/lodash/angular[.min].js'></script>
-<script src='/path/to/angular[.min].js'></script>
-<script src='/path/to/angular-simple-logger/angular-simple-logger[.min].js'></script>
-<script src='/path/to/angular-google-maps[.min].js'></script>
+    <script src='../node_modules/lodash/lodash.min.js'></script>
+    <script src='../node_modules/angular/angular.min.js'></script>
+    <script src='../node_modules/angular-simple-logger/dist/angular-simple-logger.min.js'></script>
+    <script src='../node_modules/angular-google-maps/angular-google-maps.min.js'></script>
+<!-- <script src='/path/to/angular-google-maps[.min].js'></script> -->
 <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
   <link href="../assets/css/main.css" rel="stylesheet" type="text/css" media="all">
 </head>
@@ -68,6 +68,7 @@
     </div>
 
     <div class="browse" ng-show="tabs.browse == 'active'">
+      <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
       Hello  browse :D
     </div>
 

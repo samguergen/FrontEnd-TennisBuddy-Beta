@@ -120,6 +120,8 @@ a:hover:not(.active) {
   padding: 35px;
 }
 
+.angular-google-map-container { height: 400px; }
+
 .main-body .login {
   background-color: red;
   height: 450px;

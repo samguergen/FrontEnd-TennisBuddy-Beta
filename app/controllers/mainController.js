@@ -1,10 +1,12 @@
-angular.module('myApp', [])
+angular.module('myApp', ['uiGmapgoogle-maps'])
 .controller('mainController', ['$scope', 'uiGmapGoogleMapApi', function($scope, uiGmapGoogleMapApi){
   console.log('inside the controller');
 
-  $scope.uiGmapGoogleMapApi.then(function(maps) {
-    console.log(maps);
-    });
+  // $scope.uiGmapGoogleMapApi.then(function(maps) {
+  //   console.log(maps);
+  //   });
+
+  $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
 
   $scope.user = {
     'firstName': "Miss",
