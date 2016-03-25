@@ -87,10 +87,15 @@ a:hover:not(.active) {
 
 .main-content {
   z-index: 10;
-  margin-top: -400px;
-  margin-left: 40%;
+  margin-top: -350px;
   font-weight: bold;
   font-size: 20px;
+  text-align: center;
+}
+
+.main-content .location-question {
+  display: block;
+  margin-top: 60px;
 }
 
 .main-body .profile {
