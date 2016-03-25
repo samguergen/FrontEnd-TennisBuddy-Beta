@@ -13,25 +13,20 @@ angular.module('myApp', [])
 
   // $scope.profile = function(){console.log('ok');};
 
-  $scope.home = '';
-  $scope.profile = '';
-  $scope.past = '';
-  $scope.browse='';
-  $scope.create=';'
 
 
   $scope.tabSelection = $scope.tabsArray[0];
 
-  // $scope.tabSwitch = function(tab) {
-  //   for (var i in $scope.tabsArray) {
-  //     console.log($scope.tabsArray[i);
-  //     if ($scope.tabsArray[i] == tab) {
-  //       console.log('alright');
-  //       $scope.tabsArray = false;
-  //       $scope.tabsArray[i] = true;
-  //     }
-  //   }
-  // };
+  $scope.tabSwitch = function(tab) {
+    for (var i in $scope.tabsArray) {
+      console.log($scope.tabsArray[i]);
+      // if ($scope.tabsArray[i] == tab) {
+      //   console.log('alright');
+      //   $scope.tabsArray = false;
+      //   $scope.tabsArray[i] = true;
+      // }
+    }
+  };
 
 
 }]);

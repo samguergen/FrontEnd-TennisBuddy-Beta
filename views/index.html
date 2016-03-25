@@ -23,36 +23,36 @@
   <!-- nav layout -->
   <nav>
     <a class="logo" href="#home"><img src="../assets/img/logo.png"/></a>
-    <ul ng-model="selection">
-      <li><a ng-click="home">Home</a></li>
-      <li><a ng-click="profile">My Profile</a></li>
-      <li><a ng-click="past">Past Games</a></li>
-      <li><a ng-click="browse">Browse Area</a></li>
-      <li><a ng-click="create">Create Game</a></li>
+    <ul>
+      <li><a ng-click="tabSwitch(tabsArray[0])">Home</a></li>
+      <li><a ng-click="tabSwitch(tabsArray[1])">My Profile</a></li>
+      <li><a ng-click="tabSwitch(tabsArray[2])">Past Games</a></li>
+      <li><a ng-click="tabSwitch(tabsArray[3])">Browse Area</a></li>
+      <li><a ng-click="tabSwitch(tabsArray[4])">Create Game</a></li>
     </ul>
   </nav>
 
-  <div ng-switch on="tabSelection" class="main-body">
+  <div class="main-body">
 
-    <div ng-switch-when="home" class="home">
+    <div ng-show="home" class="home">
       <img alt="bgimg" src="../assets/img/tennis-ball.jpg">
       <div class="main-content">Time for a game</div>
     </div>
 
-    <div ng-switch-when="profile" class="profile">
+    <div ng-show="profile" ng-hide="!profile" class="profile">
       Hello profile! :)
       <p>{{ user }} </p>
     </div>
 
-    <div ng-switch-when="past" class="past">
+    <div ng-show="past" ng-hide="!past" class="past">
       Hello past games
     </div>
 
-    <div ng-switch-when="browse" class="browse">
+    <div ng-show="browse" ng-hide="!browse" class="browse">
       Hello  browse :D
     </div>
 
-    <div ng-switch-when="create" class="create"></div>
+    <div ng-show="create" ng-hide="!create" class="create"></div>
       Hello create :D
     </div>
 
