@@ -29,18 +29,19 @@ nav {
 a.logo img{
   float: left;
   width: 245px;
+  margin-left: 50px;
 }
 
 ul {
-  list-style-type: none;
-  overflow: hidden;
-  float: left;
-  width: 70%;
-  padding: 5px;
-  padding-top: 40px;
-  margin-top: -150px;
-  margin-left: 40%;
-  font-size: 21px;
+    list-style-type: none;
+    overflow: hidden;
+    float: left;
+    width: 70%;
+    padding: 5px;
+    padding-top: 40px;
+    margin-top: -125px;
+    margin-left: 36%;
+    font-size: 25px;
 }
 
 li a {
@@ -123,16 +124,20 @@ a:hover:not(.active) {
   margin: 10px;
 }
 
-.home input.submit-location {
+.home input.submit-location, textarea {
   margin-top: 20px;
   font-weight: bold;
   font-size: 20px;
+  background-color: #92ac08;
+  color: white;
 }
 
 .home input.locate {
   margin-top: 30px;
   font-weight: bold;
   font-size: 18px;
+  background-color: #92ac08;
+  color: white;
 }
 
 .home .main-content {
