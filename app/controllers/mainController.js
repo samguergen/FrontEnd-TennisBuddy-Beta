@@ -43,36 +43,20 @@ angular.module('myApp')
     }
   };
 
-  $scope.locate = function() {
-    var options = {
-                  enableHighAccuracy: true
-              };
+      var options = {
+                enableHighAccuracy: true
+            };
 
-    return navigator.geolocation.getCurrentPosition(function(pos) {
-                  $scope.position = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
-                  $scope.positionObj = JSON.stringify($scope.position);
-                  // console.log($scope.positionObj);
-                  console.log('poz is ');
-                  // console.log(JSON.stringify($scope.position));
-              },
-              function(error) {
-                  alert('Unable to get location: ' + error.message);
-              }, options);
-    };
+  navigator.geolocation.getCurrentPosition(function(pos) {
+                $scope.position = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
+                $scope.positionObj = JSON.stringify($scope.position);
+                // console.log(JSON.stringify($scope.position));
+                console.log($scope.positionObj);
+            },
+            function(error) {
+                alert('Unable to get location: ' + error.message);
+            }, options);
 
-    //     var options = {
-    //               enableHighAccuracy: true
-    //           };
-
-    // navigator.geolocation.getCurrentPosition(function(pos) {
-    //               $scope.position = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
-    //               $scope.positionObj = JSON.stringify($scope.position);
-    //               console.log($scope.positionObj);
-    //           },
-    //           function(error) {
-    //               alert('Unable to get location: ' + error.message);
-    //           }, options);
-
-
+  console.log('test');
 
 }]);
