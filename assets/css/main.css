@@ -158,3 +158,17 @@ a:hover:not(.active) {
   color: rgb(92, 180, 122);
   margin-top: 5px;
 }
+
+@media only screen and (max-device-width: 320px) {
+
+    nav {
+      height: 50px;
+      font-size: 8px;
+    }
+
+
+
+    body {
+
+    }
+}

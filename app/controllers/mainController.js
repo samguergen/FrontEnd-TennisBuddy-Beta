@@ -56,6 +56,19 @@ angular.module('myApp')
               }, options);
     }
 
+    //     var options = {
+    //               enableHighAccuracy: true
+    //           };
+
+    // navigator.geolocation.getCurrentPosition(function(pos) {
+    //               $scope.position = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
+    //               $scope.positionObj = JSON.stringify($scope.position);
+    //               console.log($scope.positionObj);
+    //           },
+    //           function(error) {
+    //               alert('Unable to get location: ' + error.message);
+    //           }, options);
+
 
 
 }]);
