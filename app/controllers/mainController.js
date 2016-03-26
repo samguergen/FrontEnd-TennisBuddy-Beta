@@ -48,7 +48,7 @@ angular.module('myApp')
                   enableHighAccuracy: true
               };
 
-    navigator.geolocation.getCurrentPosition(function(pos) {
+    return navigator.geolocation.getCurrentPosition(function(pos) {
                   $scope.position = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
                   $scope.positionObj = JSON.stringify($scope.position);
                   // console.log($scope.positionObj);
