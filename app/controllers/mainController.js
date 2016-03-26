@@ -8,6 +8,8 @@ angular.module('myApp')
 
   $scope.map = { center: { latitude: 25, longitude: -73 }, zoom: 8 };
 
+  $scope.currentPlace = { center: { latitude: 25, longitude: -73 }, zoom: 8 };
+
   $scope.submitLocation = function(location) {
     console.log('location is ', location);
   }
@@ -50,6 +52,8 @@ angular.module('myApp')
                   $scope.position = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
                   $scope.positionObj = JSON.stringify($scope.position);
                   console.log($scope.positionObj);
+                  console.log('poz is ');
+                  console.log(JSON.stringify($scope.position));
               },
               function(error) {
                   alert('Unable to get location: ' + error.message);
