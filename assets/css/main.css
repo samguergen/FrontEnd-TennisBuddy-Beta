@@ -108,6 +108,10 @@ a:hover:not(.active) {
   height: 450px;
 }
 
+#map {
+  height: 100%;
+}
+
 .main-body .login {
   background-color: red;
   height: 450px;

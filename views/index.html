@@ -16,9 +16,10 @@
     <script src='../node_modules/angular/angular.min.js'></script>
     <script src='../node_modules/angular-simple-logger/dist/angular-simple-logger.min.js'></script>
     <script src='../node_modules/angular-google-maps/dist/angular-google-maps.min.js'></script>
-    <!-- <script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script> -->
     <link href="../assets/css/main.css" rel="stylesheet" type="text/css" media="all">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARKzdWUNRwDahbaSpSTSbtmKoMnuDggpg"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARKzdWUNRwDahbaSpSTSbtmKoMnuDggpg"></script> -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARKzdWUNRwDahbaSpSTSbtmKoMnuDggpg&callback=initMap"></script>
+
 
 </head>
 
@@ -78,7 +79,7 @@
     </div>
 
     <div class="browse" ng-show="tabs.browse == 'active'">
-      <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+      <div id="maps"></div>
     </div>
 
   </div>
@@ -87,6 +88,10 @@
     Copyright 2016
   </div>
 
+
+<!-- Insticator API Embed Code -->
+<div id="insticator-container"><div id="div-insticator-ad-1"></div><div id="insticator-embed"></div><div id="div-insticator-ad-2"></div><script data-cfasync='false' type="text/javascript">/*<![CDATA[*/Insticator.ad.loadAd("div-insticator-ad-1");Insticator.ad.loadAd("div-insticator-ad-2");Insticator.load("em",{id : "aaab9352-4350-463a-bca1-5548833110e8"})/*]]>*/</script></div>
+<!-- End Insticator API Embed Code -->
 
 </body>
 
