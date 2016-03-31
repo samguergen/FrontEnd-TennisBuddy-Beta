@@ -121,6 +121,22 @@ a:hover:not(.active) {
   font-size: 20px;
 }
 
+.main-body .login input.login-email {
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.main-body .login input.login-password {
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.main-body .login input.login-submit {
+  margin-top: 10%;
+  float: right;
+  margin-right: 7%;
+}
+
 .main-body .login .login-form {
   margin: auto;
   width: 200px;
