@@ -110,6 +110,21 @@ a:hover:not(.active) {
   background-color: red;
   height: 450px;
   padding: 35px;
+  display: flex;
+}
+
+.main-body .login label {
+  font-size: 24px;
+}
+
+.main-body .login input {
+  font-size: 20px;
+}
+
+.main-body .login .login-form {
+  margin: auto;
+  width: 200px;
+  height: 400px;
 }
 
 .home img {
