@@ -75,7 +75,8 @@
     </div>
 
     <div class="profile" ng-show="tabs.profile == 'active'">
-      <h2>My Profile</h2>
+      <div class="page-title">My Profile</div>
+      <span class="edit-instruction"> Click on your info to edit! </span>
       <p class="profile-description" >
         <div class="first-col">
           <div editable-text="user.firstName">first name: <br>
@@ -96,8 +97,8 @@
         </div>
       </p>
 
-      <button id="edit-btn" ng-click="editProfile()" ng-hide="showEditForm">Edit Info</button>
-      <button id="delete-btn" ng-click="deleteProfile()" ng-hide="showEditForm">Deactivate Account</button>
+      <!-- <button id="edit-btn" ng-click="editProfile()" ng-hide="showEditForm">Edit Info</button>
+      <button id="delete-btn" ng-click="deleteProfile()" ng-hide="showEditForm">Deactivate Account</button> -->
 
     </div>
 
