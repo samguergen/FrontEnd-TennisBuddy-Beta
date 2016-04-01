@@ -47,7 +47,6 @@ nav ul {
 
 nav ul li a {
   padding: 15px;
-  /*display: block;*/
   color: rgb(92, 180, 122);
   text-shadow: 0px 0px 2px black;
   text-align: center;
@@ -100,9 +99,14 @@ a:hover:not(.active) {
   line-height: 30px;
 }
 
+.main-body .profile .first-col {
+  float: left;
+  margin-left: 9%;
+}
+
 .main-body .profile .second-col {
-  margin-left: 40%;
-  margin-top: -200px;
+  float: left;
+  margin-left: 30%;
 }
 
 .main-body .profile #edit-form {
