@@ -73,6 +73,7 @@ a:hover:not(.active) {
   margin-top: 5px;
   height: 450px;
   display: block;
+  overflow: hidden;
 }
 
 .main-body .profile {
@@ -88,6 +89,11 @@ a:hover:not(.active) {
 .main-body .profile .profile-description {
   margin: 20px;
   line-height: 30px;
+}
+
+.main-body .profile .second-col {
+  margin-left: 40%;
+  margin-top: -200px;
 }
 
 .main-body .profile #edit-form {

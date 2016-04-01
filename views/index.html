@@ -77,28 +77,27 @@
     <div class="profile" ng-show="tabs.profile == 'active'">
       <h2>My Profile</h2>
       <p class="profile-description" >
-        <div editable-text="user.firstName">first name:{{ user.firstName }} </div><br>
-        <div editable-text="user.lastName">last name: {{ user.lastName }} </div><br>
-        <div editable-text="user.description">description: {{ user.description }} </div><br>
-        <div editable-text="user.email">email: {{ user.email }}</div>
-        <div editable-text="user.password">password: {{ user.password }}</div>
-        <div editable-text="user.games">games played: {{ user.games }} </div><br>
-      </p>
-
-<!--       <div class="edit-div" ng-show="showEditForm">
-        <div id="edit-form" action="#" ng-model="user">
-          <input type="text" id="edit-firstName" editable-text="user.firstName" placeholder="{{user.firstName}}"><br>
-          <input type="text" id="edit-lastName" editable-text="user.lastName" placeholder="{{user.lastName}}"><br>
-          <input type="text" id="edit-description" editable-text="user.description" placeholder="{{user.description}}"><br>
-          <input type="text" id="edit-email" editable-text="user.email" placeholder="{{user.email}}"><br>
-          <input type="password" id="edit-password" editable-text="user.password" placeholder="{{user.password}}"><br>
+        <div class="first-col">
+          <div editable-text="user.firstName">first name: <br>
+          {{ user.firstName }} </div><br>
+          <div editable-text="user.lastName">last name: <br>
+          {{ user.lastName }} </div><br>
+          <div editable-text="user.description">description: <br>
+          {{ user.description }} </div><br>
         </div>
-      </div> -->
 
+        <div class="second-col">
+          <div editable-text="user.email">email: <br>
+          {{ user.email }} </div><br>
+          <div editable-text="user.password">password: <br>
+          {{ user.password }}</div><br>
+          <div editable-text="user.games">games played: <br>
+          {{ user.games }} </div><br>
+        </div>
+      </p>
 
       <button id="edit-btn" ng-click="editProfile()" ng-hide="showEditForm">Edit Info</button>
       <button id="delete-btn" ng-click="deleteProfile()" ng-hide="showEditForm">Deactivate Account</button>
-      <!-- <button id="submit-edit-btn" ng-click="submitEditProfile()" ng-show="showEditForm" ng-model="user">Confirm Changes</button> -->
 
     </div>
 
