@@ -6,6 +6,8 @@ angular.module('myApp')
   //   console.log(maps);
   //   });
 
+  $scope.positionObj = {};
+
   $scope.map = { center: { latitude: 25, longitude: -73 }, zoom: 8 };
 
   $scope.submitLocation = function(location) {
@@ -42,18 +44,25 @@ angular.module('myApp')
   };
 
   $scope.locate = function() {
-    console.log(this.test);
+    console.log('is lat long working?');
+    console.log($scope.positionObj);
+    // console.log(this.test);
+              };
+
+    var options = {
+                  enableHighAccuracy: true
               };
 
     navigator.geolocation.getCurrentPosition(function(pos) {
                   $scope.position = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
                   $scope.positionObj = JSON.stringify($scope.position);
-                  this.test = JSON.stringify($scope.position);
-                  console.log($scope.positionObj);
+                  // console.log($scope.positionObj);
               },
               function(error) {
                   alert('Unable to get location: ' + error.message);
               }, options);
+
+
 
 
 
