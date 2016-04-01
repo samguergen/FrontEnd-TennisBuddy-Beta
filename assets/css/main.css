@@ -90,6 +90,14 @@ a:hover:not(.active) {
   line-height: 30px;
 }
 
+.main-body .profile #edit-btn {
+  margin-left: 25%;
+}
+
+.main-body .profile #delete-btn {
+  margin-left: 3%;
+}
+
 .main-body .past {
   background-color: beige;
   height: 450px;
