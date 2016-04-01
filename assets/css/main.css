@@ -99,6 +99,12 @@ a:hover:not(.active) {
   line-height: 30px;
 }
 
+.main-body .profile input.editable-input.form-control {
+  height: 35px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
 .main-body .profile .first-col {
   float: left;
   margin-left: 9%;
