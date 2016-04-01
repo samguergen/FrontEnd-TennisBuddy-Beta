@@ -85,19 +85,19 @@
       </p>
 
       <div class="edit-div" ng-show="showEditForm">
-        <form id="edit-form" action="#" ng-model="user">
+        <div id="edit-form" action="#" ng-model="user">
           <input type="text" id="edit-firstName" editable-text="user.firstName" placeholder="{{user.firstName}}"><br>
           <input type="text" id="edit-lastName" editable-text="user.lastName" placeholder="{{user.lastName}}"><br>
           <input type="text" id="edit-description" editable-text="user.description" placeholder="{{user.description}}"><br>
           <input type="text" id="edit-email" editable-text="user.email" placeholder="{{user.email}}"><br>
           <input type="password" id="edit-password" editable-text="user.password" placeholder="{{user.password}}"><br>
-        </form>
+        </div>
       </div>
 
 
       <button id="edit-btn" ng-click="editProfile()" ng-hide="showEditForm">Edit Info</button>
       <button id="delete-btn" ng-click="deleteProfile()" ng-hide="showEditForm">Deactivate Account</button>
-      <button id="submit-edit-btn" ng-click="submitEditProfile()" ng-show="showEditForm" ng-model="user">Confirm Changes</button>
+      <!-- <button id="submit-edit-btn" ng-click="submitEditProfile()" ng-show="showEditForm" ng-model="user">Confirm Changes</button> -->
 
     </div>
 
