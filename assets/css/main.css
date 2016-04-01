@@ -115,6 +115,11 @@ a:hover:not(.active) {
   margin-left: 30%;
 }
 
+.main-body .profile .second-col .profile-games {
+  margin-left: -135%;
+  margin-top: 110px;
+}
+
 .main-body .profile #edit-form {
   margin-left: 10%;
   font-size: 20px;
