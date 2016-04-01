@@ -46,3 +46,5 @@ console.log('Magic happens on port ' + port);
 
 // expose app
 exports = module.exports = app;
+
+var db = require('./config/db');
