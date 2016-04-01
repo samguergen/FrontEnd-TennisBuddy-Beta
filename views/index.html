@@ -74,7 +74,7 @@
 
     <div class="profile" ng-show="tabs.profile == 'active'">
       <h2>My Profile</h2>
-      <p class="profile-description">
+      <p class="profile-description" ng-hide="showEditForm">
         first name:{{ user.firstName }} <br>
         last name: {{ user.lastName }} <br>
         description: {{ user.description }} <br>
@@ -82,13 +82,13 @@
         email: {{ user.email }}
       </p>
 
-      <div class="edit-form" ng-show="showEditForm">
-        <form action="#" ng-model="user">
-          <input type="text" id="edit-firstName">
-          <input type="text" id="edit-lastName">
-          <input type="text" id="edit-description">
-          <input type="text" id="edit-email">
-          <input type="password" id="edit-password">
+      <div class="edit-div" ng-show="showEditForm">
+        <form id="edit-form" action="#" ng-model="user">
+          <input type="text" id="edit-firstName" placeholder="{{user.firstName}}"><br>
+          <input type="text" id="edit-lastName" placeholder="{{user.lastName}}"><br>
+          <input type="text" id="edit-description" placeholder="{{user.description}}"><br>
+          <input type="text" id="edit-email" placeholder="{{user.email}}"><br>
+          <input type="password" id="edit-password" placeholder="{{user.password}}"><br>
       </div>
 
       <button id="edit-btn" ng-click="editProfile()" ng-model="user">Edit Info</button>

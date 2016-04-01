@@ -90,6 +90,11 @@ a:hover:not(.active) {
   line-height: 30px;
 }
 
+.main-body .profile form#edit-form {
+  margin-left: 10%;
+  font-size: 20px;
+}
+
 .main-body .profile #edit-btn {
   margin-left: 25%;
 }

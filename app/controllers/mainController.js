@@ -58,6 +58,10 @@ angular.module('myApp')
     // console.log(this.test);
               };
 
+
+
+//TODO: implement timeout on geolocation
+
     var options = {
                   enableHighAccuracy: true
               };
