@@ -43,6 +43,10 @@ angular.module('myApp')
     }
   };
 
+  $scope.editProfile = function(){
+
+  };
+
   $scope.locate = function() {
     console.log('is lat long working?');
     console.log($scope.positionObj);

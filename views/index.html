@@ -81,6 +81,10 @@
         games played: {{ user.games }} <br>
         email: {{ user.email }}
       </p>
+
+      <button id="edit-btn" ng-click="editProfile(user)" ng-model="user">Edit Profile Info</button>
+      <button id="edit-btn" ng-click="deleteProfile(user)" ng-model="user">Deactivate Profile</button>
+
     </div>
 
     <div class="past" ng-show="tabs.past == 'active'">
