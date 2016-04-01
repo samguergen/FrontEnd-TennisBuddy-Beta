@@ -82,6 +82,15 @@
         email: {{ user.email }}
       </p>
 
+      <div class="edit-form" ng-show="showEditForm">
+        <form action="#" ng-model="user">
+          <input type="text" id="edit-firstName">
+          <input type="text" id="edit-lastName">
+          <input type="text" id="edit-description">
+          <input type="text" id="edit-email">
+          <input type="password" id="edit-password">
+      </div>
+
       <button id="edit-btn" ng-click="editProfile()" ng-model="user">Edit Info</button>
       <button id="delete-btn" ng-click="deleteProfile()" ng-model="user">Deactivate Account</button>
 

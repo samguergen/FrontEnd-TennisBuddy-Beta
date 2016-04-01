@@ -15,6 +15,8 @@ angular.module('myApp')
   }
 
   $scope.user = {
+    'id': 1,
+    'cryptId': "1xx",
     'firstName': "Miss",
     'lastName': "Nobody",
     'description': "Some cool hacker chick",
@@ -30,6 +32,8 @@ angular.module('myApp')
     'browse':'deactivated',
     'login':'deactivated'
   };
+
+  $scope.showEditForm = false;
 
   $scope.tabSelection = $scope.tabs[0];
 
