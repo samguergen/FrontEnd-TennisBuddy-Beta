@@ -28,7 +28,6 @@ nav {
 }
 
 nav a.logo img{
-  /*float: left;*/
   width: 245px;
   margin: auto;
   order: 1;
@@ -40,7 +39,6 @@ nav ul {
   width: 70%;
   padding-top: 40px;
   margin-top: -150px;
-  /*margin-left: 40%;*/
   font-size: 160%;
   margin: auto;
   order: 2;
@@ -48,18 +46,13 @@ nav ul {
 }
 
 nav ul li a {
-  /*float: left;*/
   padding: 15px;
-  display: block;
+  /*display: block;*/
   color: rgb(92, 180, 122);
   text-shadow: 0px 0px 2px black;
   text-align: center;
   text-decoration: none;
   margin: auto;
-}
-
- nav ul li:last-child {
-  /*margin-left: 50%;*/
 }
 
 a:hover {
