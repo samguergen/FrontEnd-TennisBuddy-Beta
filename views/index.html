@@ -91,8 +91,9 @@
           <input type="password" id="edit-password" placeholder="{{user.password}}"><br>
       </div>
 
-      <button id="edit-btn" ng-click="editProfile()" ng-model="user">Edit Info</button>
-      <button id="delete-btn" ng-click="deleteProfile()" ng-model="user">Deactivate Account</button>
+      <button id="edit-btn" ng-click="editProfile()" ng-hide="showEditForm">Edit Info</button>
+      <button id="delete-btn" ng-click="deleteProfile()" ng-hide="showEditForm">Deactivate Account</button>
+      <button id="submit-edit-btn" ng-click="submitEditProfile()" ng-show="showEditForm" ng-model="user">Confirm Changes</button>
 
     </div>
 
