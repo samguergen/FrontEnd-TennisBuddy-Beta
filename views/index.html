@@ -76,15 +76,16 @@
 
     <div class="profile" ng-show="tabs.profile == 'active'">
       <h2>My Profile</h2>
-      <p class="profile-description" ng-hide="showEditForm">
-        first name:{{ user.firstName }} <br>
-        last name: {{ user.lastName }} <br>
-        description: {{ user.description }} <br>
-        games played: {{ user.games }} <br>
-        email: {{ user.email }}
+      <p class="profile-description" >
+        <div editable-text="user.firstName">first name:{{ user.firstName }} </div><br>
+        <div editable-text="user.lastName">last name: {{ user.lastName }} </div><br>
+        <div editable-text="user.description">description: {{ user.description }} </div><br>
+        <div editable-text="user.email">email: {{ user.email }}</div>
+        <div editable-text="user.password">password: {{ user.password }}</div>
+        <div editable-text="user.games">games played: {{ user.games }} </div><br>
       </p>
 
-      <div class="edit-div" ng-show="showEditForm">
+<!--       <div class="edit-div" ng-show="showEditForm">
         <div id="edit-form" action="#" ng-model="user">
           <input type="text" id="edit-firstName" editable-text="user.firstName" placeholder="{{user.firstName}}"><br>
           <input type="text" id="edit-lastName" editable-text="user.lastName" placeholder="{{user.lastName}}"><br>
@@ -92,7 +93,7 @@
           <input type="text" id="edit-email" editable-text="user.email" placeholder="{{user.email}}"><br>
           <input type="password" id="edit-password" editable-text="user.password" placeholder="{{user.password}}"><br>
         </div>
-      </div>
+      </div> -->
 
 
       <button id="edit-btn" ng-click="editProfile()" ng-hide="showEditForm">Edit Info</button>
