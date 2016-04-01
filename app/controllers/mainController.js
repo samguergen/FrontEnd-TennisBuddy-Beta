@@ -47,9 +47,12 @@ angular.module('myApp')
     }
   };
 
-  $scope.editProfile = function(){
-    console.log($scope.user);
+  $scope.editProfile = function() {
     $scope.showEditForm = true;
+  };
+
+  $scope.submitEditProfile = function() {
+    console.log($scope.user);
   };
 
   $scope.locate = function() {
