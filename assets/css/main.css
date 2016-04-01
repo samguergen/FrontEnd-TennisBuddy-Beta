@@ -110,18 +110,14 @@ a:hover:not(.active) {
   font-size: 20px;
 }
 
-.main-body .profile button#edit-btn {
-  margin-left: 25%;
+.editable-buttons {
+  font-size: 25px;
 }
 
-.main-body .profile button#delete-btn {
-  margin-left: 3%;
-}
-
-.main-body .profile button#submit-edit-btn {
-  margin-left: 18%;
-  margin-top: 20px;
-  font-size: 15px;
+button.btn.btn-primary, button.btn.btn-default {
+  width: 8%;
+  height: 25px;
+  border-radius: 5px;
 }
 
 .main-body .past {
