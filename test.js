@@ -11,7 +11,7 @@ MongoClient.connect(URL, function(err, db) {
     lastName: 'guerg',
     id: 1,
     cryptId: '1xx',
-    email: 's@g.com,'
+    email: 's@g.com',
     password: 123123,
     games: ['sam-vs-marc']
   }, function(err, result) {
