@@ -80,10 +80,10 @@
 
       <div class="profile-description">
         <div class="first-col">
-          <div editable-text="user.firstName" buttons="no" blur="submit">First name:
-          {{ user.firstName }} </div><br>
-          <div editable-text="user.lastName" buttons="no" blur="submit">Last name:
-          {{ user.lastName }} </div><br>
+          <span editable-text="user.firstName" buttons="no" blur="submit">Name:
+          {{ user.firstName }} </span>
+          <span editable-text="user.lastName" buttons="no" blur="submit">
+          {{ user.lastName }} </span><br>
           <div editable-text="user.description" buttons="no" blur="submit">Description:
           {{ user.description }} </div><br>
         </div>
@@ -93,7 +93,7 @@
           {{ user.email }} </div><br>
           <div editable-text="user.password" buttons="no" blur="submit">Password:
           {{ user.password }}</div><br>
-          <div editable-text="user.games" buttons="no" blur="submit">Games Played:
+          <div>Games Played:
           {{ user.games }} </div><br>
         </div>
       </div>
