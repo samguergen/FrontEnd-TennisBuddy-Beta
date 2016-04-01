@@ -81,21 +81,26 @@
       <div class="profile-description">
         <div class="first-col">
           <div>
-          <span editable-text="user.firstName" buttons="no" blur="submit">Name:
+          <span editable-text="user.firstName" buttons="no" blur="submit">
+            <span class="edit-labels">Name:</span>
           {{ user.firstName }} </span>
           <span editable-text="user.lastName" buttons="no" blur="submit">
           {{ user.lastName }} </span>
         </div><br>
-          <div editable-text="user.description" buttons="no" blur="submit">Description:
+          <div editable-text="user.description" buttons="no" blur="submit">
+            <span class="edit-labels">Description:</span>
           {{ user.description }} </div><br>
         </div>
 
         <div class="second-col">
-          <div editable-text="user.email" buttons="no" blur="submit">Email:
+          <div editable-text="user.email" buttons="no" blur="submit">
+            <span class="edit-labels">Email:</span>
           {{ user.email }} </div><br>
-          <div editable-text="user.password" buttons="no" blur="submit">Password:
+          <div editable-text="user.password" buttons="no" blur="submit">
+            <span class="edit-labels">Password:</span>
           {{ user.password }}</div><br>
-          <div class="profile-games">Games Played:
+          <div class="profile-games">
+            <span class="edit-labels">Games Played:</span>
           {{ user.games }} </div><br>
         </div>
       </div>

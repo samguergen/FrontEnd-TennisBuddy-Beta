@@ -105,6 +105,12 @@ a:hover:not(.active) {
   border-radius: 5px;
 }
 
+.main-body .profile .edit-labels {
+  font-weight: bold;
+  font-size: 20px;
+  color: #1B4536;
+}
+
 .main-body .profile .first-col {
   float: left;
   margin-left: 9%;
