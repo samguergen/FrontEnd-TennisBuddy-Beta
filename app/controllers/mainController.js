@@ -49,6 +49,7 @@ angular.module('myApp')
 
   $scope.editProfile = function(){
     console.log($scope.user);
+    $scope.showEditForm = true;
   };
 
   $scope.locate = function() {
