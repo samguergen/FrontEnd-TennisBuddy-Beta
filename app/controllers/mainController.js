@@ -44,7 +44,7 @@ angular.module('myApp')
   };
 
   $scope.editProfile = function(){
-
+    console.log($scope.user);
   };
 
   $scope.locate = function() {
