@@ -56,7 +56,8 @@ angular.module('myApp')
     navigator.geolocation.getCurrentPosition(function(pos) {
                   $scope.position = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
                   $scope.positionObj = JSON.stringify($scope.position);
-                  // console.log($scope.positionObj);
+                  console.log('your current longitude and latitudes are....');
+                  console.log($scope.positionObj);
               },
               function(error) {
                   alert('Unable to get location: ' + error.message);
