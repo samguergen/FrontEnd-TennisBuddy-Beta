@@ -2,10 +2,6 @@ angular.module('myApp')
 .controller('mainController', ['$scope', 'uiGmapGoogleMapApi', function($scope, uiGmapGoogleMapApi){
   console.log('inside the controller');
 
-  // $scope.uiGmapGoogleMapApi.then(function(maps) {
-  //   console.log(maps);
-  //   });
-
   $scope.positionObj = {};
 
   $scope.map = { center: { latitude: 25, longitude: -73 }, zoom: 8 };
@@ -74,13 +70,10 @@ angular.module('myApp')
                   $scope.positionObj = JSON.stringify($scope.position);
                   console.log('your current longitude and latitudes are....');
                   console.log($scope.positionObj);
+                  alert($scope.positionObj);
               },
               function(error) {
                   alert('Unable to get location: ' + error.message);
               }, options);
-
-
-
-
 
 }]);
