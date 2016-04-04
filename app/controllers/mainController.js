@@ -8,7 +8,7 @@ angular.module('myApp')
 
   $scope.submitLocation = function(location) {
     console.log('location is ', location);
-  }
+  };
 
   $scope.user = {
     'id': 1,
@@ -28,6 +28,14 @@ angular.module('myApp')
     'browse':'deactivated',
     'login':'deactivated'
   };
+
+  $scope.requests = [
+    'request 1',
+    'request 2',
+    'request 3',
+    'request 4',
+    'request 5',
+  ];
 
   $scope.showEditForm = false;
 

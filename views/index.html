@@ -106,10 +106,29 @@
 
     <div class="past" ng-show="tabs.past == 'active'">
       Hello past games
+      <!-- list of past games using ng-repeat, each game contains score + comments list -->
     </div>
+
+
 
     <div class="browse" ng-show="tabs.browse == 'active'">
       <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+    </div>
+
+
+<!-- game div will be nested inside past -->
+    <div class="game" ng-show="tabs.game == 'active'">
+        <!-- games contains meetup-info (with score) request and comments -->
+    </div>
+
+<!-- nested inside new game, alongside browse div -->
+    <div class="requests-list" ng-show="tabs.requests == 'active'">
+
+    </div>
+
+<!-- nested inside game -->
+    <div class="request-comments-list" ng-show="tabs.comments == 'active'">
+
     </div>
 
   </div>
