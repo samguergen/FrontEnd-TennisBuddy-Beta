@@ -1,2 +1,4 @@
-# TennisBuddy
-Find a tennis partner by posting your request in real-time :D
+
+FrontEnd-TennisBuddy-Beta
+Front End for Tennis Buddy in AngularJS, HTML, CSS. Very Beta.
+
