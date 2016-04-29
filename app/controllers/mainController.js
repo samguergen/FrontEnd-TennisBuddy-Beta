@@ -26,7 +26,20 @@ angular.module('myApp')
     'profile':'deactivated',
     'past':'deactivated',
     'browse':'deactivated',
-    'login':'deactivated'
+    'login':'deactivated',
+    'newGame':'deactivated'
+  };
+
+  $scope.newGame = {
+    'id': 1,
+    'creator': "Sam",
+    'player 1': "Sam",
+    'player 2': "stupid",
+    'score': '10-6',
+    'winner': 'Sam',
+    'location': 'Williamsburg Sports Center',
+    'description', 'Who wants to play with me this morning?',
+    'comments': [{'melanie': 'nice game!'}, {}]
   };
 
   $scope.requests = [

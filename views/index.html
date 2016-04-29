@@ -25,7 +25,6 @@
 </head>
 
 
-
 <body ng-app="myApp" ng-controller="mainController">
 
 {{ tabSelection}}
@@ -33,7 +32,6 @@
   <nav>
     <a class="logo" ng-click="tabSwitch('home')"><img src="../assets/img/logo.png"/></a>
     <ul> <!-- once backend implemented -->
-      <!-- <li><a ng-click="tabSwitch('signup')">Signup</a></li> -->
       <li><a ng-click="tabSwitch('login')">Login</a></li>
       <li><a ng-click="tabSwitch('profile')">My Profile</a></li>
       <li><a ng-click="tabSwitch('past')">Past Games</a></li>
@@ -110,9 +108,12 @@
     </div>
 
 
-
     <div class="browse" ng-show="tabs.browse == 'active'">
       <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+    </div>
+
+    <div class="new-game" ng-show="tabs.new == 'active'">
+      Create a new game
     </div>
 
 
